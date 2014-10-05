@@ -7,16 +7,18 @@
         <meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
 	
         <!- change title text if you want to  -->
-	<title>ElektroMotor characteristics from harmony</title>  
+	<title>ElektroMotor characteristics </title>  
 	
         <!- loads and links the ccs3 stylesheets  -->
 	<link rel='stylesheet' type='text/css' href='css/style.css'                       /> 
 	<link id="size-stylesheet" rel='stylesheet' type='text/css' href='css/narrow.css' />
-	
+	<link href="css/nv.d3.css" rel="stylesheet" type="text/css">
+
     <!- support libraries and scripts  -->
     <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js'></script>      <!- support library to make javascript more like a 'real' language  -->
-    <script type='text/javascript' src='javascripts/resolution-test.js'></script>                                              <!- changes the css stylesheet to medium or wide dependable on window size -->
-    <script type="text/javascript" src="d3/d3.v3.js"></script>
+    <script type='text/javascript' src='js/resolution-test.js'></script>                                              <!- changes the css stylesheet to medium or wide dependable on window size -->
+    <script type="text/javascript" src="d3/d3.v3.js"></script>                                                        <!- data visualisation framework     -->
+    <script src="d3/nv.d3.js"></script>                                                                               <!- charting framework based on d3   -->
 </head>
 
 <body>
@@ -27,10 +29,10 @@
 	    <div id="graphs">
         
            <div id="raw">
-             <p id="add">Add a new data value</p>
-		     <p id="remove">Remove a data value</p>
-			
-		    <script src = "javascripts/dynamic_bars.js"></script>
+  
+               <svg style='height:80%'/>
+
+               <script src="js/mychart.js"></script>
 
            </div>        <!- d3graph are all the graphs sections  -->
 			
@@ -47,5 +49,5 @@
         <div id="footer">Footer</div>
 
 </body>
-
+         <script type='text/javascript'   window.onresize(); ></script>  <!- force a resize so all the % options in css work -->
 </html>
