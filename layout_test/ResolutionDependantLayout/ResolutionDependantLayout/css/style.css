@@ -1,0 +1,15 @@
+/*
+	 CSS-Tricks Example
+	 by Chris Coyier
+	 http://css-tricks.com
+*/
+
+
+body { font: 1vw Georgia, serif; }  /* 1vw is 1% of the viewport width */
+div { background: #eee; }
+d3graph { background: #3ee; }
+raw { background: #000; }
+fft1 { background: #111; }
+fft2 { background: #222; }
+fft3 { background: #333; }
+fft4 { background: #444; }

@@ -1,0 +1,12 @@
+html { height:100%; } /* set the size to the current viewport */
+body { background: linear-gradient(black, white);  width: 100%; height: 100%;  }
+#header {  width: 94%; height: 4%; margin-left: 2% }
+#footer {  width: 94%; height: 4%; margin-left: 2% }
+#graphs {   width: 90%; min-height: 80%; margin-left: 4% ; }
+#graphs:after { content: "graphs ends" ;}
+#raw  {  float: left; width: 100% ; height: 80px ;}
+#fft1 {  float: left; width: 20% ; min-height: 80% ;}
+#fft2 {  float: left; width: 20% ; min-height: 80% ;}
+#fft3{  float: left; width: 20% ; min-height: 80% ;}
+#fft4{  float: left; width: 20% ; min-height: 80% ;}
+
