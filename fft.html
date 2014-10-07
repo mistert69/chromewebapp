@@ -24,30 +24,42 @@
 <body>
 
 
-        <div id="header">Header</div>          <!- div are all the subclasses of body  -->
+        <div id="header">Motor defect monitoring</div>          <!- div are all the subclasses of body  -->
 		
 	    <div id="graphs">
         
            <div id="raw">
   
-               <svg style='height:80%'/>
+               <svg />
 
-               <script src="js/mychart.js"></script>
+              
 
            </div>        <!- d3graph are all the graphs sections  -->
-			
-           <d3graph id="fft1">FFT1</d3graph>
+		
+           
+	
+           <d3graph id="fft">
+            
+                <svg /> 
+            
+           </d3graph>
         
-           <d3graph id="fft2">FFT2</d3graph>
+           <d3graph id="time">
+                
+               <svg /> 
+            
+           </d3graph>
 	
-           <d3graph id="fft3">FFT3</d3graph>		
-	
-           <d3graph id="fft4">FFT4</d3graph>
-
+          
         </div>
        
         <div id="footer">Footer</div>
 
 </body>
-         <script type='text/javascript'   window.onresize(); ></script>  <!- force a resize so all the % options in css work -->
+         <script>
+             document.getElementById("raw").style.height= "46%";
+         </script>
+         <script src="js/mychart.js"></script>
+        
+         <script type='text/javascript'  $(window).trigger('resize'); ></script>  <!- force a resize so all the % options in css work -->
 </html>
