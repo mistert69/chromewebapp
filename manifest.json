@@ -3,9 +3,10 @@
   "description": "My first Chrome App.",
   "version": "0.1",
   "manifest_version": 2,
+  "permissions" : ["serial"],
   "app": {
     "background": {
-      "scripts": ["background.js","javascripts/dynamic_bars.js"]
+      "scripts": ["background.js","js/mychart.js","js/resolution-test.js","js/jquery-2.1.1.js"]
     }
   },
   "icons": { "16": "calculator-16.png", "128": "calculator-128.png" }

@@ -12,13 +12,13 @@
         <!- loads and links the ccs3 stylesheets  -->
 	<link rel='stylesheet' type='text/css' href='css/style.css'                       /> 
 	<link id="size-stylesheet" rel='stylesheet' type='text/css' href='css/narrow.css' />
-	<link href="css/nv.d3.css" rel="stylesheet" type="text/css">
+	<link href="css/nv.d3.min.css" rel="stylesheet" type="text/css">
 
     <!- support libraries and scripts  -->
-    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js'></script>      <!- support library to make javascript more like a 'real' language  -->
+    <script type='text/javascript' src='js/jquery-2.1.1.js'></script>                                                <!- support library to make javascript more like a 'real' language  -->
     <script type='text/javascript' src='js/resolution-test.js'></script>                                              <!- changes the css stylesheet to medium or wide dependable on window size -->
     <script type="text/javascript" src="d3/d3.v3.js"></script>                                                        <!- data visualisation framework     -->
-    <script src="d3/nv.d3.js"></script>                                                                               <!- charting framework based on d3   -->
+    <script src="d3/nv.d3.min.js"></script>                                                                               <!- charting framework based on d3   -->
 </head>
 
 <body>
@@ -56,9 +56,7 @@
         <div id="footer">Footer</div>
 
 </body>
-         <script>
-             document.getElementById("raw").style.height= "46%";
-         </script>
+         <script src="js/producer.js"></script>
          <script src="js/mychart.js"></script>
         
          <script type='text/javascript'  $(window).trigger('resize'); ></script>  <!- force a resize so all the % options in css work -->

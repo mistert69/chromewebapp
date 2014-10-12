@@ -1,19 +1,4 @@
-function myData() {
-    var series1 = [];
-    for(var i =1; i < 100; i ++) {
-        series1.push({
-            x: i, y: 100 / i
-        });
-    }
 
-    return [
-        {
-            key: "Series #1",
-            values: series1,
-            color: "#0000ff"
-        }
-    ];
-}
 
 nv.addGraph(function() {
     var chart = nv.models.lineChart();
